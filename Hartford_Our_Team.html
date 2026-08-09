@@ -61,11 +61,20 @@
   .fbar{border-top:1px solid #47433f;padding-top:18px;color:#8f8c87;font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   @media(max-width:860px){.team{grid-template-columns:1fr 1fr}.hero h1{font-size:30px}footer .cols{grid-template-columns:1fr 1fr}}
   @media(max-width:560px){.team{grid-template-columns:1fr}}
+
+  .bform{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;text-align:left}
+  .bform h3{font-size:18px;margin-bottom:3px;color:var(--black)}
+  .bform .sub{font-size:13px;color:var(--grey);margin-bottom:14px}
+  .bform .frow{display:flex;gap:12px;margin-bottom:12px}
+  .bform label{flex:1;font-size:12px;font-weight:700;color:var(--black);display:flex;flex-direction:column;gap:5px}
+  .bform input{padding:11px 12px;border:1px solid var(--line);border-radius:7px;font-size:14px;font-family:inherit;color:var(--black)}
+  .ctagrid{display:grid;grid-template-columns:1.05fr .95fr;gap:32px;align-items:center}
+  @media(max-width:760px){.ctagrid{grid-template-columns:1fr;gap:22px}}
 </style>
 </head>
 <body>
 <div class="nav">
-  <div class="brand"><span class="mk">CW</span>CITY WIDE<small>CONNECTICUT</small></div>
+  <a class="brand" href="Hartford_Market_Home.html" aria-label="City Wide Facility Solutions — Greater Hartford home"><img src="https://gocitywide.com/wp-content/uploads/2024/07/CW-Logo-Black.png" alt="City Wide Facility Solutions" style="height:40px;width:auto;display:block"></a>
   <div class="navlinks">
     <a href="Hartford_Services_Hub.html">Services We Manage</a><a href="Hartford_Industries_Hub.html">Industries We Serve</a><a href="Hartford_Areas_Hub.html">Areas We Serve</a><a>Careers</a><a href="Hartford_Blog_Index.html">Blog</a><a class="active">Our Team</a>
     <a class="phone" href="tel:+12039578700">(203) 957-8700</a>
@@ -149,11 +158,7 @@
   </div>
 </div></section>
 
-<section class="final"><div class="wrap">
-  <h2>Ready to meet your local team?</h2>
-  <p>Tell us about your facility and we'll connect you with the right City Wide manager for your building.</p>
-  <a class="btn" href="Hartford_Market_Home.html#quote">Request a Free Quote</a>
-</div></section>
+<section class="final"><div class="wrap"><div class="ctagrid"><div style="text-align:left"><h2 style="margin:0 0 10px">Ready to meet your local team?</h2><p style="margin:0 0 10px;max-width:none">Tell us about your facility and we'll connect you with the right City Wide manager for your building — we reply within one business day.</p><a href="tel:+12039578700" style="color:#fff;font-weight:800;font-size:17px">or call (203) 957-8700</a></div><div><form class="bform" onsubmit="return false"><h3>Get a Free Quote</h3><div class="sub">Tell us about your facility — we reply within one business day.</div><div class="frow"><label>Name<input type="text" placeholder="Your name"></label><label>Company<input type="text" placeholder="Company"></label></div><div class="frow"><label>Email<input type="email" placeholder="you@company.com"></label></div><div class="frow"><label>Phone<input type="tel" placeholder="(860) 000-0000"></label><label>ZIP<input maxlength="5" placeholder="06___"></label></div><button class="btn" style="width:100%;border:none;margin-top:2px;background:var(--red);color:#fff">Request My Quote</button></form></div></div></div></section>
 
 <footer>
   <div class="wrap">
